@@ -677,7 +677,10 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 15px;
+}
+.col-sm-12 p{
+    font-size: 20px;
 }
 
 .tight-width-whitespace {
