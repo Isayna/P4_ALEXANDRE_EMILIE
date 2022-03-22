@@ -525,7 +525,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -660,6 +660,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
+    color: unset;
     
 }
 
@@ -694,7 +695,7 @@ p {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    width: 100%;
     margin: auto auto auto auto;
 }
 
@@ -713,9 +714,11 @@ p {
 }
 
 .social {
-    max-width: 400px;
+    display: flex;
+    flex-direction: row;
     margin: auto auto auto auto;
     color: #000000;
+    padding: 16px;
     
 }
 
@@ -752,6 +755,9 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .portfolio-row {
@@ -790,7 +796,7 @@ color: #000000;
 }
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: hsl(226, 94%, 30%)!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -903,6 +909,9 @@ color: #000000;
     .page-container {
         overflow-x: hidden;
         position: relative;
+    }
+    .social{
+        flex-direction: column;
     }
     h1,
     h2,
